@@ -1,0 +1,128 @@
+/**************LA PAGE DE CONNEXION*******************/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*******LES COULEURS D'ARIERES PLAN DE LA PAGE DE CONNAIXION*************/
+
+
+.login-title{
+    grid-area: login-title;
+    padding: 0 20px;
+}
+
+/*********LE TITRE******/
+.login-title h1{
+    color: #1877f2;
+    font-size: 5rem;
+    margin: 15px;
+}
+
+/******LE PARAGRAPHE P****/
+.login-title p{
+    color: #1877f2;
+    font-size: 1.5rem;
+}
+
+.login-form{   
+    grid-area: login-form;
+    margin: 0 auto;
+    width: 340px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%),0 8px 16px rgb(0 0 0 / 20%);
+    border-radius: 5px;
+
+}
+
+/**********LE FORMULAIRE*********/
+.login-form.form-row{
+    margin: 5px 0;
+}
+.login-form .form-row input{
+    height: 50px;
+    font-size: 1.2rem;
+    width:95%;
+    border-radius: 5px;
+    border: 1px solid #cccc;
+    outline: none;
+}
+
+/*******LES BOUTONS**********/
+button{
+    border: none;
+    padding: 15px;
+    font: size 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.login-form .form-button .bt-login-submit{
+    background-color: #1877f2;
+    color: white;
+    width: 95%;
+}
+.login-form .form-infos p a {
+    text-decoration: none;
+    color: #1877f2;
+}
+.login-form .divider{
+    border: 0.1px solid gray;
+    width: 90%;
+    margin:10px auto ;
+}
+.login-form .form-button .bt-login-create-account{
+    background-color: #42b72a;
+    color: white;
+    width: 70%;
+}
+
+/************LE BAS DE PAGE*******/
+
+.login-footer{
+    grid-area: login-footer;
+    width: 340px;
+    margin: 0 auto;
+}
+
+.login-footer a{
+    text-decoration: none;
+    padding-top: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+/************LA GRILLE AU NIVAU DU CONTAINER********/
+.container-login{
+    text-align: center;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 360px 1fr;
+    grid-template-areas: "login-title" "login-form" "login-footer";
+}
+
+/********LES ECRANT DE GRANDES TAILLES***********/
+@media screen and (min-width:900px) {
+    .container-login{
+        height: 70vh;
+        padding: 200px 56px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas: "login-title login-form" "none login-footer";
+    }
+    
+    .login-title{
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:1015px) {
+    .container-login{
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    }
+    
+}

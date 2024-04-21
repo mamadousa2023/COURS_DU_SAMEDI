@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-login" style="display: none;">
+            <div class="login-title">
+                <h1>Facebook</h1>
+                <p>avec Facebook,partagez et restez en contact avec votre entourage</p>
+            </div>
+
+            <div class="login-form">
+                <form>
+                    <div class="form-row">
+                        <input type="text" placeholder="Adresse e-mail ou numéro de tel.">
+                        <div>
+                            <input type="password" placeholder="Mot de passe">
+                        </div>
+                    </div>
+                    <div class="form-button">
+                        <button class="bt-login-submit">connexion</button>
+                    </div>
+                    <div class="form-infos">
+                        <p>
+                            <a href="#">Mot de passe oublié</a>
+                        </p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="form-button">
+                        <button class="bt-login-create-account">Créer un compte</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="login-footer" style="display: none;">
+                <p><a href="#">Créer une page</a> pour une célébrité ,un groupe ou une entrprise</p>
+            </div>
+        </div>
+
+
+        <div class="container-register">
+
+            <div class="close">
+                <i class="fa-solid fa-rectangle-xmark"></i>
+            </div>
+
+            <div class="register-title">
+                <h2>S'inscrire</h2>
+                <p>C'est rapide et facile</p>
+            </div>
+
+            <div class="divider"></div>
+            
+            <div class="register-form">
+                <form>
+
+                    <div class="form-group-input">
+                        <input type="text" placeholder="Prénom">
+                        <input type="text" placeholder="Nom de famille">
+                    </div>
+
+                    <div class="form-inline-input">
+                        <input type="text" placeholder="numéro de mobile ou e-mail">
+                    </div>
+
+                    <div class="form-inline-input">
+                        <input type="text" placeholder="Nouveau mot de passe">
+                    </div>
+
+                    <div class="form-inline-date">
+                        <p>Date de naissance <i class="fas fa-question-circle"></i></p>
+                        <div class="form-select-date">
+                            <select name="" id="" class="day">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+
+                            <select name="" id="" class="month">
+                                <option value="Janvie">Janvie</option>
+                                <option value="Février">Février</option>
+                                <option value="Mars">Mars</option>
+                                <option value="Avril">Avril</option>
+                                <option value="Mai">Mai</option>
+                                <option value="Juin">Juin</option>
+                                <option value="Juillet">Juillet</option>
+                                <option value="Août">Août</option>
+                                <option value="Septembre">Septembre</option>
+                                <option value="Octobre">Octobre</option>
+                                <option value="Novembre">Novembre</option>
+                                <option value="Decembre">Decembre</option>
+                            </select>
+                            <select name="" id="" class="year">
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="1995">1995</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-inline-genre">
+                        <p>Genre <i class="fas fa-question-circle"></i></p>
+                        <div class="form-radio-items">
+                            <div class="form-radio-item">
+                                <label for="Femme">Femme</label>
+                                <input type="radio" name="genre" id="Femme" />
+                            </div>
+                            <div class="form-radio-item">
+                                <label for="Homme">Homme</label>
+                                <input type="radio" name="genre" id="Homme" />
+                            </div>
+                            <div class="form-radio-item">
+                                <label for="autre">Personnalisé</label>
+                                <input type="radio" name="genre" id="autre" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-register-infos">
+                        <p>En cliquant sur s'inscrire,vous acceptez nos conditions générales.
+                            Découvrez comment nous recueillons ,utilisons et patageons vos données en lisant notre
+                            politique
+                            d'utilisation des données et comment nous utilisons les cookies et autres technologies
+                            similaires en
+                            consultant notre Politique d'utilisation des cookies.Vous recevrez peut-être des
+                            notifications
+                            par
+                            txto de notre part et vous pouvez à tout moment vous désabonner.
+                        </p>
+                    </div>
+
+                    <div class="form-register-button">
+                        <button class="bt-register-submit">S'inscrire</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

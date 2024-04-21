@@ -1,0 +1,137 @@
+
+/*************LA PAGE D'ENREGISTREMENT****************/
+.container-register{
+    width: 500px;
+    height: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%),0 8px 16px rgb(0 0 0 / 33%);
+    border-radius: 5px;
+}
+
+/*********************LE TITRE DE LA PAGE DE CONNAIXION  ********************************/
+.container-register .register-title{
+    padding: 0 20px;
+    
+}
+
+/***********************LE DIVIDER*****************************************/
+.container-register .divider{
+    border: 0.1px solid #ccc;
+}
+
+/***********************LE TITRE H2*****************************************/
+
+.container-register.register-title h2{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+/***********************LE PARAGRAPHE P*****************************************/
+.container-register .register-title p{
+    color: gray;
+}
+
+/***********************LE REGISTER FORM************************/
+
+.container-register .register-form{
+    padding: 15px;
+}
+
+/***********************LES INPUTS************************/
+.container-register .register-form input{
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+/***********************TOUS LES INPUTS************************/
+.container-register .register-form .form-group-input{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+/***********************LES INLINES INPUTS************************/
+.container-register .register-form .form-inline-input{
+    display: flex;
+    margin-bottom: 5px;
+    
+}
+
+.container-register .register-form .form-inline-input input,
+.container-register .register-form .form-group-input input {
+    flex:1;   
+}
+
+
+.container-register .form-select-date{
+    display: flex;
+    gap: 5px;
+}
+.container-register .form-select-date select{
+    flex: 1;
+     height: 40px;
+     border-radius: 5px;
+     border: 1px solid#ccc;
+     outline: none; 
+     font-size: 1.2rem;   
+}
+
+.container-register .form-inline-date p,
+.container-register .form-inline-genre p{
+    color: gray;
+    font-size: 0.8em;
+}
+
+
+/***********************LES BOUTONS RADIOS ET LE LABEL******************************************/
+.container-register .form-radio-items{
+    display: flex;
+    gap: 5px;
+    text-align: center;
+    margin: 5px 0;
+}
+.container-register .form-radio-items .form-radio-item {
+    flex: 1;
+    height: 40px;
+     border-radius: 5px;
+     border: 1px solid#ccc;  
+}
+.container-register .form-radio-items .form-radio-item label{
+    position: relative;
+    bottom: 13px;
+}
+/**********************LE REGISTER INFOS***********************************/
+.container-register .form-register-infos{
+    font-size: 0.9em;
+    text-align: justify;
+    margin-bottom: 5px;
+    color: gray;
+}
+/***************************LE BOUTON************************************/
+.container-register .form-register-button{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.container-register .form-register-button .bt-register-submit{
+        background-color: #00a400;
+        width: 200px;
+        height: 36px;
+        line-height: 5px;
+        color: white;
+}
+
+/****************************************************/
+@media screen and (max-width: 600px) {
+    .container-register {
+        width: 360px;
+    }
+    .container-register .register-form .form-group-input input{
+        
+    }
+}

@@ -1,0 +1,411 @@
+
+/******************LE MENU DU SITE****************************************/
+
+header{
+        
+        grid-area: header;
+        padding-left: 5px;
+        font-size: 2.3rem;
+        display: flex;
+        text-align: center;
+        height: 67px;
+        position: fixed;
+        background-color: white;
+        width: 100vw;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%),0 8px 16px rgb(0 0 0 / 10%);
+        
+}
+
+header .header-icon{
+    position: relative;
+}
+
+header .notification {
+    background-color: brown;
+    padding: 5px;
+    border-radius: 40px;
+    display: block;
+    width: 9px;
+    height: 9px;
+    font-size: 0.7rem;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+
+}
+/********************************LE HEADER LEFT*************************************/
+#header-left{
+    flex: 1;
+}
+#header-left input{
+    height: 40px;
+    margin-left: 30px;
+    border-radius: 50px;
+    border: 1px solid #cccc;
+    outline: none;
+    width: 100%;
+    padding-left: 20px;
+    bottom: 7px;
+    
+}
+#header-left .search-bar{
+    flex: 1;
+    position: relative;
+   
+}
+#header-left .fa-solid{
+    position: absolute;
+    left: 30px;
+    top: 17px;
+    font-size: 0.6em;
+    color:#cccc;
+} 
+
+/********************************LE HEADER CENTER*************************************/
+#header-center{
+    flex: 2;
+    justify-content: center;
+}
+
+#header-center .header-icon{
+    flex:0 1 85px;
+    text-align: center;
+    padding: 5px;
+}
+#header-center .header-icon:hover{
+    background-color: #cccc;
+    border-radius: 10px;
+}
+
+header #header-center .header-icon .notification{
+    bottom: 27px;
+    left: 50px;
+    
+}
+
+/****************************LE HEADER RIGHT*****************************************/
+#header-right{
+    flex: 1;
+    gap: 5px;
+    
+}
+
+
+#header-right .header-icon{
+    flex: 1;
+}
+
+
+#header-right .header-icon img{
+    width: 15px;
+    padding: 10px;
+    background-color: #cccc;
+    border-radius: 50px;
+    
+}
+
+header #header-right .header-icon .notification{
+    bottom: 30px;
+    left: 31px;
+    z-index: 1;
+    
+}
+
+
+
+.header-icon img{
+    width: 28px;
+}
+
+#header-center,
+#header-left,
+#header-right,
+.user-infos{
+    display: flex;
+    align-items: center;
+}
+/*****************************LE LOGO DU SITE****************************************/
+.logo img{
+    width: 50px;
+}
+
+/*****************************LE PROFILE****************************************/
+#header-right img{
+    border-radius: 50px;
+}
+#header-right .user-name{
+    color: gray;
+    font-size: 0.6rem;
+}
+
+/***************************ASIDE LEFT******************************************/
+.aside-left{
+        grid-area: aside-left;
+}
+.aside-left{
+        padding: 20px;
+}
+
+.aside-left .navigation-items {
+    position: fixed;
+    height: 90vh;
+    overflow: hidden;
+    right: left;
+    padding-right: 20px;
+}
+
+.aside-left .navigation-item{
+       display: flex;
+       align-items: center;
+       padding: 4px;
+       cursor: pointer;
+}
+.aside-left .navigation-item:nth-child(1) img{
+    border-radius: 50px;
+}
+.aside-left .navigation-item .navigation-description {
+    font-weight: bold;
+    padding-left: 10px;
+}
+.aside-left .navigation-item:hover {
+    background-color: #efefef;
+    border-radius: 5px;
+}
+
+.aside-left a {
+    text-decoration: none;
+    color:black;
+}
+
+
+
+/******************************LE CONTENT********************************************/
+.content{
+        background-color: gold;
+        grid-area: content;
+}
+
+/*******Carousel*******/
+.stories-item{
+
+    width: 220px;
+}
+.stories-item img{
+
+    width: 200px;
+}
+
+
+
+/******************************ASIDE RIGHT********************************************/
+
+.aside-right{
+        grid-area: aside-right;
+        padding-bottom: 20px;
+}
+
+.aside-right .users-items{
+    position: fixed;
+    height: 90vh;
+    overflow: scroll;
+    right: 0;
+    padding-right: 20px;
+}
+
+.aside-right .users-item{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 2.5px;
+    position: relative;
+}
+
+.aside-right .users-item img{
+    border-radius: 50px;
+    width: 50px;
+}
+
+.aside-right .users-item .user-name {
+   font-weight: bold;
+   padding-left: 10px;
+}
+
+.aside-right .users-item:hover{
+    background-color: #efefef;
+    border-radius: 5px;
+}
+
+.aside-right .users-item .status{
+    width: 9px;
+    height: 9px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 15px;
+    left: 46px;
+    border: 1px solid white;
+}
+
+.online{
+    background-color: green;
+}
+
+.offline{
+    background-color: grey;
+}
+
+
+/******************************CONTAINER HOME********************************************/
+.container-home{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 330px 3fr 250px;
+    grid-template-rows: 1fr;
+    grid-template-areas: "aside-left content aside-right";
+    padding-top: 70px;
+}
+
+/*************************************RESPONSIVE*************************************/
+
+/******************LES GRANDS ECRANTS***********************/
+@media screen and (min-width:900px) and (max-width:1300px) {
+    .container-home{
+        grid-template-columns:3fr 300px;
+        grid-template-rows: 1fr;
+        grid-template-areas: "content aside-right";
+    }
+    .aside-left{
+        display: none;
+    }
+    .user-infos{
+        display: none;
+    }
+    #header-left{
+       flex: none;
+    }
+    
+    #header-left input{
+        width: 40px;
+        height: 40px;  
+        cursor: pointer; 
+    }
+    #header-left .fa-solid{
+        left: 39px;
+        top: 19px;
+    } 
+}
+
+/*****************LA VUE TABLETTE************/
+
+@media screen and (min-width:600px) and (max-width:900px) {
+    .container-home{
+        grid-template-columns:3fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "content";
+    }
+    .aside-left{
+        display: none;
+    }
+    
+    .aside-right{
+        display: none;
+    }
+
+    .aside-left{
+        display: none;
+    }
+    .user-infos{
+        display: none;
+    }
+    #header-left{
+       flex: none;
+    }
+    
+    #header-left input{
+        width: 40px;
+        height: 40px;
+        cursor: pointer;    
+    }
+
+    #header-left input:hover{
+        width: 140px;
+        padding-left: 20px;
+        font-size: 1.2rem;
+         
+    }
+    #header-left .fa-solid{
+        left: 39px;
+        top: 19px;
+    } 
+    #header-center .header-icon:nth-child(1),
+    #header-center .header-icon:nth-child(2),
+    #header-center .header-icon:nth-child(3),
+    #header-center .header-icon:nth-child(4),
+    #header-center .header-icon:nth-child(5){
+        display: none;
+    }
+    
+}
+
+/***************LA VUE MOBILE**********/
+@media screen and (max-width:600px) {
+    .container-home{
+        grid-template-columns:3fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "content";
+    }
+    .aside-left{
+        display: none;
+    }
+    
+    .aside-right{
+        display: none;
+    }
+
+    .aside-left{
+        display: none;
+    }
+    
+    .aside-right{
+        display: none;
+    }
+
+    .aside-left{
+        display: none;
+    }
+    .user-infos{
+        display: none;
+    }
+    #header-left{
+       flex: none;
+    }
+    
+    #header-left input:hover{
+        width: 140px;
+        padding-left: 20px;
+        font-size: 1.2rem;
+         
+    }
+    #header-left input{
+        width: 40px;
+        height: 40px;
+        cursor: pointer;   
+    }
+    
+    #header-left .fa-solid{
+        left: 39px;
+        top: 19px;
+    } 
+    #header-center .header-icon:nth-child(1),
+    #header-center .header-icon:nth-child(2),
+    #header-center .header-icon:nth-child(3),
+    #header-center .header-icon:nth-child(4),
+    #header-center .header-icon:nth-child(5){
+        display: none;
+    }
+    
+    #header-right .header-icon{
+        padding-right: 20px;
+    }
+    
+}
